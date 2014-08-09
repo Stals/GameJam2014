@@ -53,7 +53,7 @@ public class StateChanger : MonoBehaviour {
         shipOverlay.SetActive(false);
         engineBar.gameObject.SetActive(true);
 
-        walkingPlayer.transform.localPosition = new Vector3(-4.462337f, 0f, 0f);
+        walkingPlayer.transform.localPosition = new Vector3(-5.5f, 0f, 0f);
     }
 
     public void changeToFly()
