@@ -3,6 +3,14 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
+
+public enum GameState{
+    Fly,
+    Walk,
+    GameOver,
+    GameStart
+};
+
 public class Game  {
     private static Game instance;
     private Game() {}
@@ -20,12 +28,15 @@ public class Game  {
     
     Player player;
     GameObject playerShip;
+    GameState state;
 
     
     public void init(GameObject _playerShip)
     {
         player = new Player(100);
         playerShip = _playerShip;
+
+        state = GameState.Fly;
     }
 
     public Player getPlayer(){
@@ -35,5 +46,15 @@ public class Game  {
     public GameObject getPlayerShip()
     {
         return playerShip;
+    }
+
+    public GameState getCurrentState()
+    {
+        return state;
+    }
+
+    public void setCurrentState(GameState _state)
+    {
+        state = _state;
     }
 }

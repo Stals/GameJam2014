@@ -31,9 +31,11 @@ public class PlayerContoller : MonoBehaviour {
 	void FixedUpdate()
 	{
         currentPosition = this.transform.position;
-
-        updateMovment();
-        updateShoot();
+        if (Game.Instance.getCurrentState() == GameState.Fly)
+        {
+            updateMovment();
+            updateShoot();
+        }
 	}
 
     void updateShoot()
