@@ -83,7 +83,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 154366429}
   - 61: {fileID: 154366428}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: topWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -309,7 +309,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 455940265}
   - 61: {fileID: 455940266}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: leftWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -574,7 +574,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 675712271}
   - 61: {fileID: 675712272}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: rightWall
   m_TagString: Wall
   m_Icon: {fileID: 0}
@@ -613,7 +613,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 687168177}
   - 61: {fileID: 687168178}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: bottomWall
   m_TagString: Wall
   m_Icon: {fileID: 0}

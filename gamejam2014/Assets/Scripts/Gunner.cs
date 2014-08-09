@@ -40,7 +40,7 @@ public class Gunner : MonoBehaviour {
 
             GameObject bulletObject = (GameObject)(Instantiate(bulletPrefab, new Vector3(currentPosition.x + gunOffset.x, currentPosition.y + gunOffset.y, 0), transform.rotation));
             bulletObject.tag = this.gameObject.tag;
-            bulletObject.layer = this.gameObject.layer;
+            //bulletObject.layer = this.gameObject.layer;
 
             bulletObject.GetComponent<BulletController>().speed = new Vector3(bulletSpeed, 0);
 
