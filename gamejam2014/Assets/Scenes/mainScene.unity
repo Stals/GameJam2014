@@ -773,6 +773,7 @@ MonoBehaviour:
   shipOverlay: {fileID: 2076532435}
   switchLabel: {fileID: 961933017}
   engineBar: {fileID: 1710966196}
+  walkingPlayer: {fileID: 463482457}
 --- !u!4 &559145331
 Transform:
   m_ObjectHideFlags: 0

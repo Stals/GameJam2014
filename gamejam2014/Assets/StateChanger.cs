@@ -14,6 +14,8 @@ public class StateChanger : MonoBehaviour {
     public UILabel switchLabel;
     public UISlider engineBar;
 
+    public GameObject walkingPlayer;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -50,6 +52,8 @@ public class StateChanger : MonoBehaviour {
         
         shipOverlay.SetActive(false);
         engineBar.gameObject.SetActive(true);
+
+        walkingPlayer.transform.localPosition = new Vector3(-4.462337f, 0f, 0f);
     }
 
     public void changeToFly()
