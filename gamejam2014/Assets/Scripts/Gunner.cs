@@ -3,6 +3,8 @@ using System.Collections;
 
 public class Gunner : MonoBehaviour {
 
+    public Vector2 gunOffset = new Vector2(0f, 0f);
+
     public float shotDelay = 0.05f;
     public float shotTimeElapsed;
 
@@ -35,7 +37,7 @@ public class Gunner : MonoBehaviour {
 
             Vector2 currentPosition = transform.position;
 
-            GameObject bulletObject = (GameObject)(Instantiate(bulletPrefab, new Vector3(currentPosition.x + 1f, currentPosition.y, 0), transform.rotation));
+            GameObject bulletObject = (GameObject)(Instantiate(bulletPrefab, new Vector3(currentPosition.x + gunOffset.x, currentPosition.y + gunOffset.y, 0), transform.rotation));
             bulletObject.tag = this.gameObject.tag;
             bulletObject.layer = this.gameObject.layer;
 
