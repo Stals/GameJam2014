@@ -29,7 +29,7 @@ public class PlayerContoller : MonoBehaviour {
 	}
 
 	void FixedUpdate()
-	{123
+	{
         currentPosition = this.transform.position;
         if (Game.Instance.getCurrentState() == GameState.Fly)
         {
