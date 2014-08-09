@@ -11,9 +11,15 @@ public class PlayerContoller : MonoBehaviour {
     public KeyCode moveLeft;
     public KeyCode moveRight;
 
+    public KeyCode shootButton;
+
+
+    public GameObject playerBulletPrefab;
+    Vector3 currentPosition;
+
 	// Use this for initialization
 	void Start () {
-	
+        currentPosition = this.transform.position;
 	}
 	
 	// Update is called once per frame
@@ -22,7 +28,10 @@ public class PlayerContoller : MonoBehaviour {
 
 	void FixedUpdate()
 	{
+        currentPosition = this.transform.position;
+
         updateMovment();
+        updateShoot();
 	}
 
     void updateMovment(){
@@ -45,7 +54,20 @@ public class PlayerContoller : MonoBehaviour {
             v.x += speed.x;
         }
 
-        Vector3 currentPosition = this.transform.position;
+
         this.transform.position  =  new Vector3(currentPosition.x + v.x, currentPosition.y + v.y);
+    }
+
+    void updateShoot()
+    {
+        if (Input.GetKey(shootButton))
+        {
+            shoot();
+        } 
+    }
+
+    void shoot()
+    {
+        Instantiate(playerBulletPrefab, new Vector3(currentPosition.x + 0.1f, currentPosition.y, 0), transform.rotation);
     }
 }
