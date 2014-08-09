@@ -894,6 +894,7 @@ MonoBehaviour:
   patternPrefabs:
   - {fileID: 100002, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
+  - {fileID: 100002, guid: 44ef287d3ab11470ca2438dfca21ae1b, type: 2}
   waveDelay: 2.5
   timeElapsed: 0
 --- !u!4 &708600922
