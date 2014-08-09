@@ -10,12 +10,16 @@ public class EnemyController : MonoBehaviour {
     public float startShootingDelay;
     public float timeElapsed; // from creation
 
+    private GameObject playerShip;
+
 	// Use this for initialization
 	void Start () {
         gunner = GetComponent<Gunner>();
 
         startShootingDelay = Random.Range(startShootingDelayMin, startShootingDelayMax);
         timeElapsed = 0;
+
+        playerShip = Game.Instance.getPlayerShip();
 	}
 	
 	// Update is called once per frame

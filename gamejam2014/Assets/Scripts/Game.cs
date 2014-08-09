@@ -19,14 +19,21 @@ public class Game  {
     }
     
     Player player;
+    GameObject playerShip;
 
     
-    public void init()
+    public void init(GameObject _playerShip)
     {
         player = new Player(100);
+        playerShip = _playerShip;
     }
-    
+
     public Player getPlayer(){
         return player;
+    }
+
+    public GameObject getPlayerShip()
+    {
+        return playerShip;
     }
 }
