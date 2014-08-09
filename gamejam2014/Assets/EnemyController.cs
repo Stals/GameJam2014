@@ -76,7 +76,10 @@ public class EnemyController : MonoBehaviour {
         {
             Game.Instance.getPlayer().addMoney(10);
             Destroy (gameObject);
-            Destroy(coll.gameObject);
+
+            if(coll.gameObject.layer != 8){ // player
+                Destroy(coll.gameObject);
+            }
         }
     }
 
