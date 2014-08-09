@@ -2,10 +2,11 @@
 using System.Collections;
 
 
-
+// TODO add money with lerp
 public class GuiManager : MonoBehaviour {
 
     public UISlider hpSlider;
+    public UILabel moneyLabel;
 
 	// Use this for initialization
 	void Start () {
@@ -21,5 +22,7 @@ public class GuiManager : MonoBehaviour {
     {
         float targetValue = Game.Instance.getPlayer().getHpFactor();
         hpSlider.value = Mathf.Lerp(hpSlider.value, targetValue, Time.deltaTime * 5f);
+
+        moneyLabel.text = Game.Instance.getPlayer().getMoney().ToString();
     }
 }

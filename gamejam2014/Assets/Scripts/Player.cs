@@ -6,9 +6,11 @@ public class Player {
     public int currentHP;
     public int maxHP;
 
+    private int money;
 
     public Player(int hp){
         maxHP = currentHP = hp;
+        money = 0;
     }
 
     public float getHpFactor()
@@ -37,5 +39,20 @@ public class Player {
             currentHP = 0;
             // TODO call game over event
         }
+    }
+
+    public int getMoney()
+    {
+        return money;
+    }
+
+    public void addMoney(int m)
+    {
+        money += m;
+    }
+
+    public void removeMoney(int m)
+    {
+        money += m;
     }
 }

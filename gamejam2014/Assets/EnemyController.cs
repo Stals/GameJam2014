@@ -15,6 +15,7 @@ public class EnemyController : MonoBehaviour {
     void OnCollisionEnter2D(Collision2D coll) {
         if (coll.gameObject.tag != this.gameObject.tag)
         {
+            Game.Instance.getPlayer().addMoney(10);
             Destroy (gameObject);
             Destroy(coll.gameObject);
         }
