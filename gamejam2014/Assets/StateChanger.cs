@@ -11,6 +11,8 @@ public class StateChanger : MonoBehaviour {
 
     public GameObject shipOverlay;
 
+    public UILabel switchLabel;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -22,6 +24,8 @@ public class StateChanger : MonoBehaviour {
 	}
 
     void FixedUpdate(){
+        updateLabel();
+
         if (Input.GetKeyDown(changeButton))
         {
             if(Game.Instance.getCurrentState() == GameState.Fly){
@@ -33,6 +37,7 @@ public class StateChanger : MonoBehaviour {
                 mainCam.transform.position = new Vector3(playerPosition.x, playerPosition.y, -10);
 
                 shipOverlay.SetActive(false);
+
             }
 
             else if(Game.Instance.getCurrentState() == GameState.Walk){
@@ -41,7 +46,22 @@ public class StateChanger : MonoBehaviour {
                 mainCam.orthographicSize = farSize;
                 mainCam.transform.position = new Vector3(0, 0, -10);
                 shipOverlay.SetActive(true);
+
+
             }
         }
     }
+
+    void updateLabel()
+    {
+        if (Game.Instance.getCurrentState() == GameState.Walk)
+        {
+            switchLabel.text = "Acess Desk\nTo Pilot";
+        } 
+        else if (Game.Instance.getCurrentState() == GameState.Fly)
+        {
+            switchLabel.text = "Press TAB\nTo Walk on Ship";
+        }
+    }
+
 }

@@ -630,6 +630,7 @@ MonoBehaviour:
   closeSize: 1.20000005
   farSize: 5
   shipOverlay: {fileID: 2076532435}
+  switchLabel: {fileID: 961933017}
 --- !u!4 &559145331
 Transform:
   m_ObjectHideFlags: 0
