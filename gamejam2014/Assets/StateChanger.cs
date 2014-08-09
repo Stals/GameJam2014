@@ -20,7 +20,7 @@ public class StateChanger : MonoBehaviour {
 	}
 
     void FixedUpdate(){
-        if (Input.GetKey(changeButton))
+        if (Input.GetKeyDown(changeButton))
         {
             if(Game.Instance.getCurrentState() == GameState.Fly){
                 Game.Instance.setCurrentState( GameState.Walk );
