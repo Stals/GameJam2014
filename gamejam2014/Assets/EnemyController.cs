@@ -61,9 +61,14 @@ public class EnemyController : MonoBehaviour {
 
     void updateRotation()
     {
-        Quaternion rotation = Quaternion.LookRotation
+        Quaternion targetRotation = Quaternion.LookRotation
             (playerShip.transform.position - transform.position, transform.TransformDirection(Vector3.up));
-        transform.rotation = new Quaternion(0, 0, rotation.z, rotation.w);
+
+        //float z = Mathf.Lerp(transform.rotation.z, targetRotation.z, Time.deltaTime * 5f);
+        //float w = Mathf.Lerp(transform.rotation.w, targetRotation.w, Time.deltaTime * 5
+        //transform.rotation = new Quaternion(0, 0,z , w);
+
+        transform.rotation = new Quaternion(0, 0, targetRotation.z, targetRotation.w);
     }
 
     void OnCollisionEnter2D(Collision2D coll) {
