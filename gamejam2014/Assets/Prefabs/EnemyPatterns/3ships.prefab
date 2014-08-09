@@ -320,7 +320,7 @@ MonoBehaviour:
   bulletSpeed: .100000001
   shotDelay: 1
   shotTimeElapsed: 0
-  bulletPrefab: {fileID: 100000, guid: 39ff47e17ee714a74bb959d7dff2fae9, type: 2}
+  bulletPrefab: {fileID: 100000, guid: 262e1a94482a447fb8260ee72a50fd00, type: 2}
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -336,7 +336,7 @@ MonoBehaviour:
   bulletSpeed: .100000001
   shotDelay: 1
   shotTimeElapsed: 0
-  bulletPrefab: {fileID: 100000, guid: 39ff47e17ee714a74bb959d7dff2fae9, type: 2}
+  bulletPrefab: {fileID: 100000, guid: 262e1a94482a447fb8260ee72a50fd00, type: 2}
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -369,7 +369,7 @@ MonoBehaviour:
   bulletSpeed: .100000001
   shotDelay: 1
   shotTimeElapsed: 0
-  bulletPrefab: {fileID: 100000, guid: 39ff47e17ee714a74bb959d7dff2fae9, type: 2}
+  bulletPrefab: {fileID: 100000, guid: 262e1a94482a447fb8260ee72a50fd00, type: 2}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
