@@ -758,6 +758,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunner: {fileID: 0}
+  startShootingDelayMin: 0
+  startShootingDelayMax: .5
+  startShootingDelay: 0
+  timeElapsed: 0
 --- !u!4 &962883145
 Transform:
   m_ObjectHideFlags: 0
@@ -1213,6 +1217,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunner: {fileID: 0}
+  startShootingDelayMin: 0
+  startShootingDelayMax: .5
+  startShootingDelay: 0
+  timeElapsed: 0
 --- !u!4 &1482255015
 Transform:
   m_ObjectHideFlags: 0
@@ -1806,6 +1814,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunner: {fileID: 0}
+  startShootingDelayMin: 0
+  startShootingDelayMax: .5
+  startShootingDelay: 0
+  timeElapsed: 0
 --- !u!4 &1982828835
 Transform:
   m_ObjectHideFlags: 0

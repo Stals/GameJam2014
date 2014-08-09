@@ -4,10 +4,18 @@ using System.Collections;
 public class EnemyController : MonoBehaviour {
 
     public Gunner gunner;
+    public float startShootingDelayMin = 0f;
+    public float startShootingDelayMax = 0.5f;
+
+    public float startShootingDelay;
+    public float timeElapsed; // from creation
 
 	// Use this for initialization
 	void Start () {
         gunner = GetComponent<Gunner>();
+
+        startShootingDelay = Random.Range(startShootingDelayMin, startShootingDelayMax);
+        timeElapsed = 0;
 	}
 	
 	// Update is called once per frame
@@ -17,7 +25,15 @@ public class EnemyController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        gunner.shoot();
+       
+
+        if (timeElapsed > startShootingDelay)
+        {
+            gunner.shoot();
+
+        } else{ 
+            timeElapsed += Time.deltaTime;
+        }
     }
 
     void OnCollisionEnter2D(Collision2D coll) {
