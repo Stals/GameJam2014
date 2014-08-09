@@ -481,6 +481,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
   m_RootGameObject: {fileID: 962883141}
@@ -532,6 +536,10 @@ Prefab:
     - target: {fileID: 100002, guid: 357a064941b744621992a983ef1ecb88, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
@@ -681,7 +689,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &962883143
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -891,7 +899,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!114 &1104310763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1008,7 +1016,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &1282410459
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1093,6 +1101,10 @@ Prefab:
     - target: {fileID: 400002, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
@@ -1384,6 +1396,10 @@ Prefab:
     - target: {fileID: 400002, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
       propertyPath: m_RootOrder
       value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 5000000, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
+      propertyPath: m_CollisionDetection
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0101730ebec924f19acc0063906caf9e, type: 2}
@@ -1901,7 +1917,7 @@ Rigidbody2D:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 1
+  m_CollisionDetection: 0
 --- !u!61 &1936927427
 BoxCollider2D:
   m_ObjectHideFlags: 0

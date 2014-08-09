@@ -67,5 +67,12 @@ public class PlayerContoller : MonoBehaviour {
         this.transform.position  =  new Vector3(currentPosition.x + v.x, currentPosition.y + v.y);
     }
 
+    void OnCollisionEnter2D(Collision2D coll) {
+        if (coll.gameObject.tag != this.gameObject.tag)
+        {
+            Game.Instance.getPlayer().removeHP(5);
+            Destroy(coll.gameObject);
+        }
+    }
 
 }
