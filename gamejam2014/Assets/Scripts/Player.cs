@@ -40,7 +40,7 @@ public class Player {
 
     public int getEnginePerTick()
     {
-        return 5;
+        return 3;
     }
 
     public bool isEngineFilled()
