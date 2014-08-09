@@ -3,7 +3,7 @@ using System.Collections;
 
 public class EnemyController : MonoBehaviour {
 
-    public float flySpeed = 0.05f;
+    public float flySpeed = 0.1f;
 
     public Gunner gunner;
     public float startShootingDelayMin = 0f;

@@ -33,7 +33,7 @@ public class EnemySpawner : MonoBehaviour {
 
     void spawnWave()
     {
-        int patternID = 0;//Random.Range(0, patternPrefabs.Count - 1);
+        int patternID = Random.Range(0, patternPrefabs.Count);
         GameObject prefab = patternPrefabs[patternID];
 
         Vector3 spawnPosition = getPatternStartPosition();
@@ -43,6 +43,6 @@ public class EnemySpawner : MonoBehaviour {
 
     Vector3 getPatternStartPosition()
     {
-        return new Vector3(9, Random.Range(-3, 3), 0);
+        return new Vector3(12, Random.Range(-3, 3), 0);
     }
 }
