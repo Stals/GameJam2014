@@ -33,13 +33,13 @@ public class StateChanger : MonoBehaviour {
                 changeToWalk();
             }
 
-            else if(Game.Instance.getCurrentState() == GameState.Walk){
-                changeToFly();
-            }
+            //else if(Game.Instance.getCurrentState() == GameState.Walk){
+            //    changeToFly();
+            //}
         }
     }
 
-    void changeToWalk()
+    public void changeToWalk()
     {
         Game.Instance.setCurrentState( GameState.Walk );
         
@@ -52,7 +52,7 @@ public class StateChanger : MonoBehaviour {
         engineBar.gameObject.SetActive(true);
     }
 
-    void changeToFly()
+    public void changeToFly()
     {
         Game.Instance.setCurrentState( GameState.Fly );
         
