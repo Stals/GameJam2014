@@ -8,14 +8,39 @@ public class Player {
 
     private int money;
 
-    public Player(int hp){
+    public int currentEngine;
+    public int maxEngine;
+
+    public Player(int hp, int engine){
         maxHP = currentHP = hp;
         money = 0;
+
+        maxEngine = engine;
+        currentEngine = 0;
     }
 
     public float getHpFactor()
     {
         return (float)(currentHP) / maxHP;
+    }
+
+    public float getEngineFactor()
+    {
+        return (float)(currentEngine) / maxEngine;
+    }
+
+    public void addEngine(int e)
+    {
+        currentEngine += e;
+        if (currentEngine >= maxEngine)
+        {
+            currentEngine = maxEngine;
+        }
+    }
+
+    public bool isEngineFilled()
+    {
+        return currentEngine == maxEngine;
     }
 
     public int getHpPercent()

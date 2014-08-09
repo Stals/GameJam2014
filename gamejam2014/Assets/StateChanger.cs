@@ -12,6 +12,7 @@ public class StateChanger : MonoBehaviour {
     public GameObject shipOverlay;
 
     public UILabel switchLabel;
+    public UISlider engineBar;
 
 	// Use this for initialization
 	void Start () {
@@ -48,6 +49,7 @@ public class StateChanger : MonoBehaviour {
         mainCam.transform.position = new Vector3(playerPosition.x + 0.5f, playerPosition.y, -10);
         
         shipOverlay.SetActive(false);
+        engineBar.gameObject.SetActive(true);
     }
 
     void changeToFly()
@@ -57,6 +59,7 @@ public class StateChanger : MonoBehaviour {
         mainCam.orthographicSize = farSize;
         mainCam.transform.position = new Vector3(0, 0, -10);
         shipOverlay.SetActive(true);
+        engineBar.gameObject.SetActive(false);
     }
 
     void updateLabel()

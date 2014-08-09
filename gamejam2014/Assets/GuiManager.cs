@@ -7,6 +7,7 @@ public class GuiManager : MonoBehaviour {
 
     public UISlider hpSlider;
     public UILabel moneyLabel;
+    public UISlider engineBar;
 
 	// Use this for initialization
 	void Start () {
@@ -24,5 +25,13 @@ public class GuiManager : MonoBehaviour {
         hpSlider.value = Mathf.Lerp(hpSlider.value, targetValue, Time.deltaTime * 5f);
 
         moneyLabel.text = Game.Instance.getPlayer().getMoney().ToString();
+
+        updateEngine();
+    }
+
+    void updateEngine()
+    {
+        float targetValue = Game.Instance.getPlayer().getEngineFactor();
+        engineBar.value = Mathf.Lerp(engineBar.value, targetValue, Time.deltaTime * 5f);
     }
 }
