@@ -553,6 +553,7 @@ MonoBehaviour:
   mainCam: {fileID: 1290066782}
   closeSize: 1.20000005
   farSize: 5
+  shipOverlay: {fileID: 2076532435}
 --- !u!4 &559145331
 Transform:
   m_ObjectHideFlags: 0

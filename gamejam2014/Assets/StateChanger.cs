@@ -9,6 +9,8 @@ public class StateChanger : MonoBehaviour {
     public float closeSize;
     public float farSize;
 
+    public GameObject shipOverlay;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -29,7 +31,8 @@ public class StateChanger : MonoBehaviour {
 
                 Vector3 playerPosition = Game.Instance.getPlayerShip().transform.position;
                 mainCam.transform.position = new Vector3(playerPosition.x, playerPosition.y, -10);
-                // TODO -10 не забыть
+
+                shipOverlay.SetActive(false);
             }
 
             else if(Game.Instance.getCurrentState() == GameState.Walk){
@@ -37,6 +40,7 @@ public class StateChanger : MonoBehaviour {
                 
                 mainCam.orthographicSize = farSize;
                 mainCam.transform.position = new Vector3(0, 0, -10);
+                shipOverlay.SetActive(true);
             }
         }
     }
