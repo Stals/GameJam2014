@@ -97,6 +97,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f53adbe82c6e946aa9a1ea583ebeca46, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flySpeed: .0399999991
   gunner: {fileID: 0}
   startShootingDelayMin: 0
   startShootingDelayMax: .5

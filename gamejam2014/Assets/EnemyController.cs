@@ -3,6 +3,8 @@ using System.Collections;
 
 public class EnemyController : MonoBehaviour {
 
+    public float flySpeed = 0.05f;
+
     public Gunner gunner;
     public float startShootingDelayMin = 0f;
     public float startShootingDelayMax = 0.5f;
@@ -12,6 +14,8 @@ public class EnemyController : MonoBehaviour {
 
     private GameObject playerShip;
 
+    private float prefferedDistanceToPlayer;
+
 	// Use this for initialization
 	void Start () {
         gunner = GetComponent<Gunner>();
@@ -20,6 +24,8 @@ public class EnemyController : MonoBehaviour {
         timeElapsed = 0;
 
         playerShip = Game.Instance.getPlayerShip();
+
+        prefferedDistanceToPlayer = Random.Range(5, 7);
 	}
 	
 	// Update is called once per frame
@@ -29,15 +35,24 @@ public class EnemyController : MonoBehaviour {
 
     void FixedUpdate()
     {
-        updateRotation();
-        updateGun();
+        bool moved = updatePosition();
+
+        // TODO mb remove this
+        // or check if moved into place
+        if (!moved)
+        {
+            updateRotation();
+            updateGun();
+        }
     }
 
     void updateGun()
     {
         if (timeElapsed > startShootingDelay)
         {
-            gunner.shoot();
+            //if(getDistanceToPlayer() < 7){
+                gunner.shoot();
+            //}
             
         } else{ 
             timeElapsed += Time.deltaTime;
@@ -58,5 +73,27 @@ public class EnemyController : MonoBehaviour {
             Destroy (gameObject);
             Destroy(coll.gameObject);
         }
+    }
+
+    //return true if moved
+    bool updatePosition()
+    {
+        float distance = getDistanceToPlayer();
+
+        if (transform.position.x >= 0)
+        {
+            if (distance > prefferedDistanceToPlayer)
+            {
+                transform.position = new Vector3(transform.position.x - flySpeed, transform.position.y, 0);
+                return true;
+            } 
+        }
+
+        return false;
+    }
+
+    float getDistanceToPlayer(){
+        //return Mathf.Abs(Mathf.Abs(playerShip.transform.position.x) - Mathf.Abs(transform.position.x));
+        return Vector3.Distance (transform.position, playerShip.transform.position);
     }
 }
