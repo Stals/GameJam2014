@@ -74,6 +74,33 @@ NavMeshSettings:
     widthInaccuracy: 16.666666
     heightInaccuracy: 10
   m_NavMesh: {fileID: 0}
+--- !u!1 &139445767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 139445768}
+  m_Layer: 13
+  m_Name: weaponUpgradeObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &139445768
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 139445767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 972395276}
+  m_RootOrder: 3
 --- !u!1 &154366427
 GameObject:
   m_ObjectHideFlags: 0
@@ -854,7 +881,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 357a064941b744621992a983ef1ecb88, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 21200002, guid: 357a064941b744621992a983ef1ecb88, type: 2}
       propertyPath: m_SortingOrder
@@ -952,6 +979,58 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 6
+--- !u!1 &726040679
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 726040680}
+  - 61: {fileID: 726040682}
+  - 114: {fileID: 726040681}
+  m_Layer: 13
+  m_Name: repairShipObjct
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &726040680
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726040679}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.20153332, y: -2.90318394, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 972395276}
+  m_RootOrder: 4
+--- !u!114 &726040681
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726040679}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 107426290ef2c4eaa81543b2a2423b7e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  actionButton: 32
+--- !u!61 &726040682
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 726040679}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Size: {x: 2.8900001, y: 2.1500001}
+  m_Center: {x: 0, y: 0}
 --- !u!1 &777092732
 GameObject:
   m_ObjectHideFlags: 0
@@ -1236,6 +1315,8 @@ Transform:
   - {fileID: 463482458}
   - {fileID: 838135396}
   - {fileID: 1239168048}
+  - {fileID: 139445768}
+  - {fileID: 726040680}
   m_Father: {fileID: 1104310759}
   m_RootOrder: 2
 --- !u!212 &972395277
@@ -2480,7 +2561,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &2076532436
 Transform:
   m_ObjectHideFlags: 0
