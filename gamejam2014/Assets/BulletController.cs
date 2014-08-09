@@ -6,6 +6,8 @@ public class BulletController : MonoBehaviour {
 
     public Vector3 speed = new Vector3(0.2f, 0, 0);
    
+    bool seen = false;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -15,7 +17,11 @@ public class BulletController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (renderer.isVisible)
+            seen = true;
+        
+        if (seen && !renderer.isVisible)
+            Destroy(gameObject);
 	}
 
     void FixedUpdate()
