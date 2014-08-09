@@ -114,7 +114,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gunOffset: {x: -.5, y: 0}
-  bulletSpeed: .200000003
+  bulletSpeed: .100000001
   shotDelay: 1
   shotTimeElapsed: 0
   bulletPrefab: {fileID: 100000, guid: 39ff47e17ee714a74bb959d7dff2fae9, type: 2}
