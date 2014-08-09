@@ -27,4 +27,12 @@ public class BulletController : MonoBehaviour {
         Vector3 currentPosition = this.transform.position;
         this.transform.position  =  new Vector3(currentPosition.x + speed.x, currentPosition.y + speed.y);
     }
+
+    void OnCollisionEnter2D(Collision2D coll) {
+        if (coll.gameObject.tag != this.gameObject.tag)
+        {
+            Destroy (gameObject);
+            Destroy(coll.gameObject);
+        }
+    }
 }
