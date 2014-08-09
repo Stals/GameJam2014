@@ -73,6 +73,6 @@ public class EnemySpawner : MonoBehaviour {
 
     Vector3 getPatternStartPosition()
     {
-        return new Vector3(12, Random.Range(-3, 3), 0);
+        return new Vector3(12, Random.Range(-2.5f, 2.5f), 0);
     }
 }
