@@ -22,7 +22,7 @@ public class PanelObject : MonoBehaviour {
     {
         if (inside)
         {
-            if(Input.GetKey(actionButton)){
+            if(Input.GetKey(actionButton)/* || Input.GetKey(KeyCode.Tab)*/){
                 stateChanger.changeToFly();
             }
         }
