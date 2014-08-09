@@ -9,7 +9,8 @@ public class BulletController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-	
+        //if(
+        //speed.x = transform.rotation.x
 	}
 	
 	// Update is called once per frame
