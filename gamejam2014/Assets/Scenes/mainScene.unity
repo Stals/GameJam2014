@@ -535,6 +535,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bf5daf75061f44f00ad4bb232ddb7462, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: {x: .100000001, y: .100000001}
+  shotDelay: .100000001
+  shotTimeElapsed: 0
   moveUp: 273
   moveDown: 274
   moveLeft: 276

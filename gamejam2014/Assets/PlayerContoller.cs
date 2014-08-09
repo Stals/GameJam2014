@@ -3,7 +3,9 @@ using System.Collections;
 
 public class PlayerContoller : MonoBehaviour {
 
-    private Vector2 speed = new Vector2(0.1f, 0.1f);
+    public Vector2 speed = new Vector2(0.1f, 0.1f);
+    public float shotDelay = 0.05f;
+    public float shotTimeElapsed;
 
     public KeyCode moveUp;
     public KeyCode moveDown;
@@ -20,6 +22,7 @@ public class PlayerContoller : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         currentPosition = this.transform.position;
+        shotTimeElapsed = shotDelay;
 	}
 	
 	// Update is called once per frame
@@ -60,14 +63,21 @@ public class PlayerContoller : MonoBehaviour {
 
     void updateShoot()
     {
+        shotTimeElapsed += Time.deltaTime;
+
         if (Input.GetKey(shootButton))
         {
-            shoot();
+            if( shotTimeElapsed >= shotDelay){
+                shotTimeElapsed = 0;
+                shoot();
+            }
         } 
     }
 
     void shoot()
     {
-        Instantiate(playerBulletPrefab, new Vector3(currentPosition.x + 0.1f, currentPosition.y, 0), transform.rotation);
+
+
+        Instantiate(playerBulletPrefab, new Vector3(currentPosition.x + 1f, currentPosition.y, 0), transform.rotation);
     }
 }
