@@ -1041,6 +1041,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hint: {fileID: 405037192}
+  actionButton: 32
 --- !u!1 &961933015
 GameObject:
   m_ObjectHideFlags: 0

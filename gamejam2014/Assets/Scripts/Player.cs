@@ -38,6 +38,11 @@ public class Player {
         }
     }
 
+    public int getEnginePerTick()
+    {
+        return 5;
+    }
+
     public bool isEngineFilled()
     {
         return currentEngine == maxEngine;
