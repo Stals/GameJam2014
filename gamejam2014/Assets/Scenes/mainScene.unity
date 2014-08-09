@@ -1603,7 +1603,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionButton: 32
   stateChanger: {fileID: 559145330}
-  inside: 0
 --- !u!1 &1290066778
 GameObject:
   m_ObjectHideFlags: 0

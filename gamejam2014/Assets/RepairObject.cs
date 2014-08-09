@@ -1,16 +1,11 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class RepairObject : MonoBehaviour {
-
-    public KeyCode actionButton;
-
-
-    bool inside;
+public class RepairObject : ShipObject {
 
     // Use this for initialization
     void Start () {
-        inside = true;
+
     }
     
     // Update is called once per frame
@@ -18,27 +13,8 @@ public class RepairObject : MonoBehaviour {
         
     }
     
-    void FixedUpdate()
+    public override void performAction()
     {
-        if (inside)
-        {
-            if(Input.GetKey(actionButton)){
-                Game.Instance.getPlayer().addHP(1);
-            }
-        }
-    }
-    
-    void OnTriggerEnter2D(Collider2D coll) {
-        if (coll.gameObject.layer == 12) // WalkingPlayer
-        {
-            inside = true;
-        }
-    }
-    
-    void OnTriggerExit2D(Collider2D coll) {
-        if (coll.gameObject.layer == 12) // WalkingPlayer
-        {
-            inside = false;
-        }
+        Game.Instance.getPlayer().addHP(1);
     }
 }
