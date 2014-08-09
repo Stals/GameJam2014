@@ -48,7 +48,7 @@ public class StateChanger : MonoBehaviour {
         mainCam.orthographicSize = closeSize;
         
         Vector3 playerPosition = Game.Instance.getPlayerShip().transform.position;
-        mainCam.transform.position = new Vector3(playerPosition.x + 0.5f, playerPosition.y, -10);
+        mainCam.transform.position = new Vector3(playerPosition.x, playerPosition.y, -10);
         
         shipOverlay.SetActive(false);
         engineBar.gameObject.SetActive(true);
