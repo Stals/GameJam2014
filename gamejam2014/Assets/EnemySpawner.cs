@@ -36,7 +36,8 @@ public class EnemySpawner : MonoBehaviour {
         {
             return delays[currentID];
         }
-        return 5f;
+
+        return delays[delays.Count - 1];
     }
 
     GameObject getCurrentWave()
