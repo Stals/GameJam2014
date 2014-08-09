@@ -474,6 +474,7 @@ GameObject:
   - 92: {fileID: 462666337}
   - 81: {fileID: 462666336}
   - 114: {fileID: 462666341}
+  - 114: {fileID: 462666342}
   m_Layer: 0
   m_Name: ParallaxCamera
   m_TagString: Untagged
@@ -545,7 +546,7 @@ Transform:
   m_PrefabInternal: {fileID: 1917525588}
   m_GameObject: {fileID: 462666335}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 10, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1698980536}
@@ -571,6 +572,21 @@ MonoBehaviour:
   speed_2: .100000001
   image_3: {fileID: 1081308755}
   speed_3: 1
+--- !u!114 &462666342
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 462666335}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73b7dd73c0764a9f8955f6fd174b43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shake_decay: 0
+  shake_intensity: 0
+  set_intensity: .0500000007
+  set_decay: .00499999989
 --- !u!1 &463482457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1559,6 +1575,7 @@ GameObject:
   - 92: {fileID: 1290066781}
   - 124: {fileID: 1290066780}
   - 81: {fileID: 1290066779}
+  - 114: {fileID: 1290066784}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -1635,6 +1652,21 @@ Transform:
   - {fileID: 687168177}
   m_Father: {fileID: 0}
   m_RootOrder: 0
+--- !u!114 &1290066784
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1290066778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c73b7dd73c0764a9f8955f6fd174b43c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shake_decay: 0
+  shake_intensity: 0
+  set_intensity: .0700000003
+  set_decay: .00499999989
 --- !u!1001 &1416390802
 Prefab:
   m_ObjectHideFlags: 0
@@ -2269,7 +2301,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1cdf86fe589fd43f78fb148be6262535, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 10
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 1cdf86fe589fd43f78fb148be6262535, type: 2}
       propertyPath: m_LocalPosition.z
