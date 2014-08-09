@@ -66,7 +66,7 @@ public class Player {
         currentHP -= hp;
         if (currentHP <= 0)
         {
-            currentHP = 0;
+            currentHP = 1;
             // TODO call game over event
         }
     }
