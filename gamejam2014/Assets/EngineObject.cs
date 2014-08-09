@@ -7,12 +7,12 @@ public class EngineObject : ShipObject {
 
 	// Use this for initialization
 	void Start () {
-        hint.SetActive(false);
+        NGUITools.SetActive(hint, false);
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        hint.SetActive(inside);
+        NGUITools.SetActive(hint, inside);
 	}
     public override void performAction()
     {
