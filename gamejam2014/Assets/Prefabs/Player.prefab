@@ -60,7 +60,8 @@ GameObject:
   m_Component:
   - 4: {fileID: 400006}
   - 212: {fileID: 21200004}
-  m_Layer: 0
+  - 68: {fileID: 6800000}
+  m_Layer: 13
   m_Name: ship_main_rooms
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -76,7 +77,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 400008}
   - 212: {fileID: 21200006}
-  m_Layer: 0
+  - 114: {fileID: 11400004}
+  - 58: {fileID: 5800000}
+  - 50: {fileID: 5000002}
+  m_Layer: 12
   m_Name: player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -129,7 +133,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: .397391319, y: -.243852615, z: 0}
   m_LocalScale: {x: .150000006, y: .150000006, z: 1}
   m_Children:
   - {fileID: 400008}
@@ -162,6 +166,32 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
+--- !u!50 &5000002
+Rigidbody2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: .0500000007
+  m_GravityScale: 1
+  m_FixedAngle: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+--- !u!58 &5800000
+CircleCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Radius: .0700000003
+  m_Center: {x: 0, y: 0}
 --- !u!61 &6100000
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -171,8 +201,51 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.70000005, y: 1}
-  m_Center: {x: 0, y: 0}
+  m_Size: {x: 2.44000006, y: 1.04999995}
+  m_Center: {x: 0, y: -.219999999}
+--- !u!68 &6800000
+EdgeCollider2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100006}
+  m_Enabled: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Points:
+  - {x: -11.4550009, y: 0}
+  - {x: -9.94717884, y: -.249322221}
+  - {x: -9.81434822, y: 2.58905339}
+  - {x: -7.56755495, y: 2.47420359}
+  - {x: -7.53740597, y: 1.43154979}
+  - {x: -6.8418026, y: 1.40877163}
+  - {x: -6.8587079, y: 3.04955363}
+  - {x: -9.78182125, y: 3.23595071}
+  - {x: -9.6141367, y: 4.37334585}
+  - {x: -3.53061676, y: 4.41021872}
+  - {x: -3.42474937, y: 2.18616128}
+  - {x: -4.65436935, y: 2.12283063}
+  - {x: -4.56021309, y: 1.35430169}
+  - {x: -3.48013878, y: 1.37740719}
+  - {x: -3.53188181, y: -.830697775}
+  - {x: -4.46157122, y: -.946053028}
+  - {x: -4.4748559, y: -1.69316304}
+  - {x: -3.58951569, y: -1.72849572}
+  - {x: -3.58689928, y: -3.94497037}
+  - {x: -9.93233013, y: -3.95312858}
+  - {x: -9.84989166, y: -2.78817415}
+  - {x: -7.03268671, y: -2.66991282}
+  - {x: -6.68210316, y: -.937620401}
+  - {x: -7.42389679, y: -.976398766}
+  - {x: -7.53429079, y: -1.91441369}
+  - {x: -9.72565937, y: -1.88421166}
+  - {x: -9.86169434, y: -.335464478}
+  - {x: -10.4402924, y: -2.16752529}
+  - {x: -10.4573402, y: -4.29333448}
+  - {x: -.418233871, y: -4.3827281}
+  - {x: -2.10782051, y: -.759268165}
+  - {x: .692160904, y: -.78122139}
+  - {x: 11.4550009, y: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -207,6 +280,18 @@ MonoBehaviour:
   shotDelay: .100000001
   shotTimeElapsed: 0
   bulletPrefab: {fileID: 100000, guid: 39ff47e17ee714a74bb959d7dff2fae9, type: 2}
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9403c00a39c14485f99203056636adfd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: {x: .0199999996, y: .0199999996}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -292,7 +377,7 @@ SpriteRenderer:
   m_LightProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 5
   m_Sprite: {fileID: 21300000, guid: 2d79fdb2052e0493abb517d99a9df363, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1001 &100100000

@@ -74,6 +74,11 @@ public class PlayerContoller : MonoBehaviour {
             return;
         }
 
+        if (coll.gameObject.layer == 12) // WalkingPlayer
+        {
+            return;
+        }
+
         if (coll.gameObject.tag != this.gameObject.tag)
         {
             Game.Instance.getPlayer().removeHP(5);
