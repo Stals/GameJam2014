@@ -20,6 +20,10 @@ public class ShipObject : MonoBehaviour {
     
     void FixedUpdate()
     {
+        if (Game.Instance.getCurrentState() != GameState.Walk){
+            return;    
+        }
+
         if (inside)
         {
             if(Input.GetKey(actionButton)){
