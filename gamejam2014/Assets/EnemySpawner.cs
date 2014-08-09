@@ -6,13 +6,18 @@ using System.Collections.Generic;
 public class EnemySpawner : MonoBehaviour {
 
     public List<GameObject> patternPrefabs;
+    public List<float> delays;
+
     public float waveDelay = 10;
 
     public float timeElapsed;
 
+    public int currentID;
+
 	// Use this for initialization
 	void Start () {
         timeElapsed = 0;
+        currentID = 0;
 	}
 	
 	// Update is called once per frame
@@ -20,21 +25,45 @@ public class EnemySpawner : MonoBehaviour {
 	
 	}
 
+    public float getTimeBeforeWave()
+    {
+        return getCurrentDelay() - timeElapsed;
+    }
+
+    float getCurrentDelay()
+    {
+        if (currentID < delays.Count)
+        {
+            return delays[currentID];
+        }
+        return 5f;
+    }
+
+    GameObject getCurrentWave()
+    {
+        if (currentID < patternPrefabs.Count)
+        {
+            return patternPrefabs [currentID];
+        } 
+        return patternPrefabs[patternPrefabs.Count - 1];
+    }
+
     void FixedUpdate()
     {
         timeElapsed += Time.deltaTime;
 
-        if (timeElapsed >= waveDelay)
+        if (timeElapsed >= getCurrentDelay())
         {
             timeElapsed = 0;
-            spawnWave();
+            spawnWave(getCurrentWave());
+            ++currentID;
         }
     }
 
-    void spawnWave()
+    void spawnWave(GameObject prefab)
     {
-        int patternID = Random.Range(0, patternPrefabs.Count);
-        GameObject prefab = patternPrefabs[patternID];
+        //int patternID = Random.Range(0, patternPrefabs.Count);
+        //GameObject prefab = patternPrefabs[patternID];
 
         Vector3 spawnPosition = getPatternStartPosition();
 

@@ -8,6 +8,9 @@ public class GuiManager : MonoBehaviour {
     public UISlider hpSlider;
     public UILabel moneyLabel;
     public UISlider engineBar;
+    public UILabel timeRemaining;
+
+    public EnemySpawner spawner;
 
 	// Use this for initialization
 	void Start () {
@@ -27,11 +30,17 @@ public class GuiManager : MonoBehaviour {
         moneyLabel.text = Game.Instance.getPlayer().getMoney().ToString();
 
         updateEngine();
+        updateTime();
     }
 
     void updateEngine()
     {
         float targetValue = Game.Instance.getPlayer().getEngineFactor();
         engineBar.value = Mathf.Lerp(engineBar.value, targetValue, Time.deltaTime * 5f);
+    }
+
+    void updateTime()
+    {
+        timeRemaining.text = spawner.getTimeBeforeWave().ToString("n2");
     }
 }
