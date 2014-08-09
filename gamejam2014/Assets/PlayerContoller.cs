@@ -70,6 +70,10 @@ public class PlayerContoller : MonoBehaviour {
     }
 
     void OnCollisionEnter2D(Collision2D coll) {
+        if (coll.gameObject.tag == "Wall"){
+            return;
+        }
+
         if (coll.gameObject.tag != this.gameObject.tag)
         {
             Game.Instance.getPlayer().removeHP(5);
