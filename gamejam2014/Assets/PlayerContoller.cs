@@ -16,6 +16,8 @@ public class PlayerContoller : MonoBehaviour {
 
     public Gunner gunner;
 
+    public CameraShake cameraShake;
+
     Vector3 currentPosition;
 
 	// Use this for initialization
@@ -84,6 +86,8 @@ public class PlayerContoller : MonoBehaviour {
         {
             Game.Instance.getPlayer().removeHP(5);
             Destroy(coll.gameObject);
+            cameraShake.Shake(.05f, .005f);
+
         }
     }
 

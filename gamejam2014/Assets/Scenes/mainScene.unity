@@ -585,8 +585,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shake_decay: 0
   shake_intensity: 0
-  set_intensity: .0500000007
-  set_decay: .00499999989
 --- !u!1 &463482457
 GameObject:
   m_ObjectHideFlags: 0
@@ -1462,6 +1460,7 @@ MonoBehaviour:
   moveRight: 275
   shootButton: 32
   gunner: {fileID: 0}
+  cameraShake: {fileID: 1290066784}
 --- !u!61 &1104310761
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1665,8 +1664,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shake_decay: 0
   shake_intensity: 0
-  set_intensity: .0700000003
-  set_decay: .00499999989
 --- !u!1001 &1416390802
 Prefab:
   m_ObjectHideFlags: 0
@@ -1718,6 +1715,10 @@ Prefab:
       propertyPath: stateChanger
       value: 
       objectReference: {fileID: 559145330}
+    - target: {fileID: 11400000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: cameraShake
+      value: 
+      objectReference: {fileID: 1290066784}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
   m_RootGameObject: {fileID: 1104310758}

@@ -7,14 +7,14 @@ public class CameraShake : MonoBehaviour
     public float shake_decay;
     public float shake_intensity;
 
-    public float set_intensity = .05f;
+   /* public float set_intensity = .05f;
     public float set_decay = 0.02f;
 
     void OnGUI (){
         if (GUI.Button (new Rect (20,40,80,20), "Shake")){
             Shake ();
         }
-    }
+    }*/
     
     void Update (){
         if (shake_intensity > 0){
@@ -28,10 +28,10 @@ public class CameraShake : MonoBehaviour
         }
     }
     
-    void Shake(){
+    public void Shake(float inten, float decay){
         originPosition = transform.position;
         originRotation = transform.rotation;
-        shake_intensity = set_intensity;
-        shake_decay = set_decay;
+        shake_intensity = inten;
+        shake_decay = decay;
     }
 }

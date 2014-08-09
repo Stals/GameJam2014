@@ -16,6 +16,8 @@ public class EnemyController : MonoBehaviour {
 
     private float prefferedDistanceToPlayer;
 
+    private CameraShake cameraShake;
+
 	// Use this for initialization
 	void Start () {
         gunner = GetComponent<Gunner>();
@@ -26,6 +28,8 @@ public class EnemyController : MonoBehaviour {
         playerShip = Game.Instance.getPlayerShip();
 
         prefferedDistanceToPlayer = Random.Range(5, 7);
+
+        cameraShake = Game.Instance.getPlayerShip().GetComponent<PlayerContoller>().cameraShake;
 	}
 	
 	// Update is called once per frame
@@ -79,6 +83,9 @@ public class EnemyController : MonoBehaviour {
 
             if(coll.gameObject.layer != 8){ // player
                 Destroy(coll.gameObject);
+                if(cameraShake){
+                    cameraShake.Shake(.017f, .005f);
+                }
             }
         }
     }
