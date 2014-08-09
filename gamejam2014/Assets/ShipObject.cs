@@ -6,7 +6,7 @@ public class ShipObject : MonoBehaviour {
     public KeyCode actionButton;
     
     
-    bool inside;
+    public bool inside;
     
     // Use this for initialization
     void Start () {

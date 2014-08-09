@@ -1010,6 +1010,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionButton: 32
+  inside: 0
 --- !u!61 &726040682
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1184,8 +1185,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba6eb4b28c7b41c388dd9aa7021ca3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 405037192}
   actionButton: 32
+  inside: 0
+  hint: {fileID: 405037192}
 --- !u!1 &961933015
 GameObject:
   m_ObjectHideFlags: 0
@@ -1602,6 +1604,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionButton: 32
+  inside: 0
   stateChanger: {fileID: 559145330}
 --- !u!1 &1290066778
 GameObject:

@@ -1,10 +1,9 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class EngineObject : MonoBehaviour {
+public class EngineObject : ShipObject {
 
     public GameObject hint;
-    public KeyCode actionButton;
 
 	// Use this for initialization
 	void Start () {
@@ -13,30 +12,10 @@ public class EngineObject : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        hint.SetActive(inside);
 	}
-
-    void FixedUpdate()
+    public override void performAction()
     {
-        if (hint.activeSelf)
-        {
-            if(Input.GetKey(actionButton)){
-                Game.Instance.getPlayer().addEngine(Game.Instance.getPlayer().getEnginePerTick());
-            }
-        }
-    }
-
-    void OnTriggerEnter2D(Collider2D coll) {
-        if (coll.gameObject.layer == 12) // WalkingPlayer
-        {
-            hint.SetActive(true);
-        }
-    }
-
-    void OnTriggerExit2D(Collider2D coll) {
-        if (coll.gameObject.layer == 12) // WalkingPlayer
-        {
-            hint.SetActive(false);
-        }
+        Game.Instance.getPlayer().addEngine(Game.Instance.getPlayer().getEnginePerTick());
     }
 }
