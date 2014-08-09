@@ -229,7 +229,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100006}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -.0763521194, y: -.00557097793, z: 0}
+  m_LocalPosition: {x: 0, y: -0, z: 0}
   m_LocalScale: {x: .150000006, y: .150000006, z: 1}
   m_Children:
   - {fileID: 400008}
@@ -421,8 +421,8 @@ EdgeCollider2D:
   m_IsTrigger: 0
   m_Points:
   - {x: -11.4550009, y: 0}
-  - {x: -9.88528252, y: -.249322221}
-  - {x: -9.87624741, y: 2.06910205}
+  - {x: -9.2725811, y: -.249322221}
+  - {x: -9.23904037, y: 2.06910205}
   - {x: -7.86467218, y: 2.09042954}
   - {x: -7.88404131, y: 1.03539598}
   - {x: -6.85418129, y: 1.06213701}
@@ -445,8 +445,8 @@ EdgeCollider2D:
   - {x: -6.85542107, y: -.987139702}
   - {x: -7.86956787, y: -.964018881}
   - {x: -7.89330482, y: -1.95155334}
-  - {x: -9.86183739, y: -1.95849061}
-  - {x: -9.86169434, y: -.335464478}
+  - {x: -9.29815292, y: -1.98299837}
+  - {x: -9.24899387, y: -.408988714}
   - {x: -10.4402924, y: -2.16752529}
   - {x: -10.4573402, y: -4.29333448}
   - {x: -.418233871, y: -4.3827281}
@@ -527,6 +527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   actionButton: 32
   inside: 0
+  hint: {fileID: 0}
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -541,6 +542,7 @@ MonoBehaviour:
   actionButton: 32
   inside: 0
   stateChanger: {fileID: 0}
+  hint: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
