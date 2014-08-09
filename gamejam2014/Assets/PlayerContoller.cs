@@ -76,8 +76,7 @@ public class PlayerContoller : MonoBehaviour {
 
     void shoot()
     {
-
-
         Instantiate(playerBulletPrefab, new Vector3(currentPosition.x + 1f, currentPosition.y, 0), transform.rotation);
+        Game.Instance.getPlayer().removeHP(10);
     }
 }
