@@ -29,8 +29,11 @@ public class CameraShake : MonoBehaviour
     }
     
     public void Shake(float inten, float decay){
-        originPosition = transform.position;
-        originRotation = transform.rotation;
+        if (shake_intensity <= 0)
+        {
+            originPosition = transform.position;
+            originRotation = transform.rotation;
+        }
         shake_intensity = inten;
         shake_decay = decay;
     }

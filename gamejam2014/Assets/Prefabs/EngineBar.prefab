@@ -32,7 +32,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -89,7 +89,7 @@ MonoBehaviour:
   mColor: {r: .0758621693, g: 1, b: 0, a: 1}
   mPivot: 4
   mWidth: 24
-  mHeight: 272
+  mHeight: 192
   mDepth: 1
   autoResizeBoxCollider: 0
   hideIfOffScreen: 0
@@ -152,21 +152,21 @@ MonoBehaviour:
   bottomAnchor:
     target: {fileID: 0}
     relative: .5
-    absolute: -140
+    absolute: -100
   topAnchor:
     target: {fileID: 0}
     relative: .5
-    absolute: 140
+    absolute: 100
   updateAnchors: 1
   mColor: {r: .313432813, g: .313432813, b: .313432813, a: 1}
   mPivot: 4
   mWidth: 32
-  mHeight: 280
+  mHeight: 200
   mDepth: 0
   autoResizeBoxCollider: 1
   hideIfOffScreen: 0
   keepAspectRatio: 0
-  aspectRatio: .114285715
+  aspectRatio: .159999996
   mType: 1
   mFillDirection: 4
   mFillAmount: 1
