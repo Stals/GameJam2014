@@ -50,7 +50,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &100006
 GameObject:
   m_ObjectHideFlags: 0
@@ -426,7 +426,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e19c8933cab36437d8784c241700c8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gunOffset: {x: 1, y: 0}
+  gunOffset: {x: 1, y: -.0599999987}
   bulletSpeed: .400000006
   shotDelay: .100000001
   shotTimeElapsed: 0
@@ -454,8 +454,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aba6eb4b28c7b41c388dd9aa7021ca3d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hint: {fileID: 0}
   actionButton: 32
+  inside: 0
+  hint: {fileID: 0}
 --- !u!114 &11400008
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -468,6 +469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionButton: 32
+  inside: 0
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -480,8 +482,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   actionButton: 32
-  stateChanger: {fileID: 0}
   inside: 0
+  stateChanger: {fileID: 0}
 --- !u!212 &21200000
 SpriteRenderer:
   m_ObjectHideFlags: 1
