@@ -11,6 +11,9 @@ public class Gunner : MonoBehaviour {
 
     public GameObject bulletPrefab;
 
+    public int upgradeLevel = 0;
+    public int maxUpgrades = 3;
+
 	// Use this for initialization
 	void Start () {
         shotTimeElapsed = shotDelay;
@@ -36,15 +39,30 @@ public class Gunner : MonoBehaviour {
         if( shotTimeElapsed >= shotDelay){
             shotTimeElapsed = 0;
 
-            Vector2 currentPosition = transform.position;
+            if(upgradeLevel == 0){
+                createBullet(new Vector2(0,0));
+            }else if(upgradeLevel == 1){
 
-            GameObject bulletObject = (GameObject)(Instantiate(bulletPrefab, new Vector3(currentPosition.x + gunOffset.x, currentPosition.y + gunOffset.y, 0), transform.rotation));
-            bulletObject.tag = this.gameObject.tag;
-            //bulletObject.layer = this.gameObject.layer;
+                createBullet(new Vector2(0,0.25f));
+                createBullet(new Vector2(0,-0.25f));
 
-            bulletObject.GetComponent<BulletController>().speed = new Vector3(bulletSpeed, 0);
-
-            //Game.Instance.getPlayer().removeHP(10);
+            }else if(upgradeLevel == 2){
+                createBullet(new Vector2(0,0.5f));
+                createBullet(new Vector2(0,0));
+                createBullet(new Vector2(0,-0.5f));
+            }
         }
+    }
+
+    public GameObject createBullet(Vector2 bulletOffset){
+
+        Vector2 currentPosition = transform.position;
+        
+        GameObject bulletObject = (GameObject)(Instantiate(bulletPrefab, new Vector3(currentPosition.x + gunOffset.x + bulletOffset.x, currentPosition.y + gunOffset.y + bulletOffset.y, 0), transform.rotation));
+        bulletObject.tag = this.gameObject.tag;
+        //bulletObject.layer = this.gameObject.layer;
+        
+        bulletObject.GetComponent<BulletController>().speed = new Vector3(bulletSpeed, 0);
+        return bulletObject;
     }
 }
