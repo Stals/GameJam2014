@@ -550,6 +550,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   changeButton: 9
+  mainCam: {fileID: 1290066782}
+  closeSize: 1.20000005
+  farSize: 5
 --- !u!4 &559145331
 Transform:
   m_ObjectHideFlags: 0
@@ -557,7 +560,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 559145329}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.12432551, y: -2.11437511, z: 1.36181641}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
