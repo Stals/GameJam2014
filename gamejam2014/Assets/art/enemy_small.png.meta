@@ -1,8 +1,8 @@
 fileFormatVersion: 2
-guid: 7e28f25ae24044eefb3a6ad101281bbe
+guid: dac55f68fff6c3f48afb0866e30ae92a
 TextureImporter:
   fileIDToRecycleName:
-    21300000: ship_main_rooms
+    21300000: enemy_small
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -25,7 +25,7 @@ TextureImporter:
   textureFormat: -1
   maxTextureSize: 1024
   textureSettings:
-    filterMode: 2
+    filterMode: -1
     aniso: 1
     mipBias: -1
     wrapMode: 1
