@@ -13,6 +13,10 @@ public class BulletController : MonoBehaviour {
 	void Start () {
         //if(
         //speed.x = transform.rotation.x
+        AudioSource audio = GetComponent<AudioSource>();
+        audio.pitch = Random.Range(0.9f, 1.3f);
+        audio.Play();
+
 	}
 	
 	// Update is called once per frame
