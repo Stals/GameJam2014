@@ -7,6 +7,7 @@ public class ShipObject : MonoBehaviour {
     
     
     public bool inside;
+    public bool once = false;
     
     // Use this for initialization
     void Start () {
@@ -15,7 +16,7 @@ public class ShipObject : MonoBehaviour {
     
     // Update is called once per frame
     void Update () {
-        
+
     }
     
     void FixedUpdate()
@@ -23,11 +24,17 @@ public class ShipObject : MonoBehaviour {
         if (Game.Instance.getCurrentState() != GameState.Walk){
             return;    
         }
-
+        
         if (inside)
         {
-            if(Input.GetKey(actionButton)){
-                performAction();
+            if(once){
+                if(Input.GetKeyDown(actionButton)){
+                    performAction();
+                }
+            }else{
+                if(Input.GetKey(actionButton)){
+                    performAction();
+                }
             }
         }
     }

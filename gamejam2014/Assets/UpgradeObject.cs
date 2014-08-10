@@ -7,6 +7,7 @@ public class UpgradeObject : ShipObject {
     // Use this for initialization
     void Start () {
         NGUITools.SetActive(hint, false);
+        once = true;
     }
     
     // Update is called once per frame
