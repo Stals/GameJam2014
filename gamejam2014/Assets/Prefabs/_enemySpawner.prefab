@@ -40,11 +40,26 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   patternPrefabs:
+  - {fileID: 100004, guid: daf244ea408a69b45a98496904a8699c, type: 2}
+  - {fileID: 100008, guid: e003977bacdb56b45baf856d2496c598, type: 2}
+  - {fileID: 100004, guid: daf244ea408a69b45a98496904a8699c, type: 2}
+  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
+  - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
+  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
+  - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
+  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100036, guid: a3e991c3e72a3754cb30d534cce1354d, type: 2}
-  - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
-  - {fileID: 100012, guid: 56865b5b39636da4fa468663d966964d, type: 2}
+  - {fileID: 100036, guid: a3e991c3e72a3754cb30d534cce1354d, type: 2}
   - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
+  - {fileID: 100008, guid: e003977bacdb56b45baf856d2496c598, type: 2}
+  - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
+  - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
+  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
@@ -53,9 +68,24 @@ MonoBehaviour:
   delays:
   - 0
   - 1
-  - 1
-  - 1
   - 2
+  - 2
+  - 3
+  - 15
+  - 2
+  - 2
+  - 2
+  - 3
+  - 20
+  - 3
+  - 3
+  - 2
+  - 3
+  - 3
+  - 3
+  - 20
+  - 5
+  - 5
   - 5
   - 5
   - 5
