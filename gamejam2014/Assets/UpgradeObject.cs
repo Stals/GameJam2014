@@ -20,6 +20,19 @@ public class UpgradeObject : ShipObject {
         Gunner gunner = Game.Instance.getPlayerShip().GetComponent<Gunner>();
         gunner.upgradeLevel += 1;
         gunner.shotDelay = 0.3f / gunner.upgradeLevel;
+        if (gunner.upgradeLevel == 1)
+        {
+            gunner.shotDelay = 0.3f;
+        }
+        else if (gunner.upgradeLevel == 2)
+        {
+            gunner.shotDelay = 0.2f;
+        }
+        else if (gunner.upgradeLevel == 3)
+        {
+            gunner.shotDelay = 0.15f;
+        }
+
         if (gunner.upgradeLevel > (gunner.maxUpgrades - 1))
         {
             gunner.upgradeLevel = gunner.maxUpgrades - 1;
