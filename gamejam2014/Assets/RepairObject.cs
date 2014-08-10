@@ -13,6 +13,14 @@ public class RepairObject : ShipObject {
     // Update is called once per frame
     void Update () {
         NGUITools.SetActive(hint, inside);
+
+        if(inside){
+            if(Input.GetKey(actionButton)){
+                GetComponent<AudioSource>().enabled = true;
+                return;
+            }
+        }
+        GetComponent<AudioSource>().enabled = false;
     }
     
     public override void performAction()
