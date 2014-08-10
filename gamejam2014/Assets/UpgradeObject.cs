@@ -26,6 +26,7 @@ public class UpgradeObject : ShipObject {
         } else
         {
             Game.Instance.getPlayer().removeMoney(gunner.upgradeLevel * 50);
+            GetComponent<AudioSource>().Play();
         }
     }
 }
