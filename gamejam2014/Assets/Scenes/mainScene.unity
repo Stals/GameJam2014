@@ -2673,6 +2673,10 @@ Prefab:
       propertyPath: explisionPrefab
       value: 
       objectReference: {fileID: 100000, guid: c881819d9d03144a88c6fd25e22a7ecb, type: 2}
+    - target: {fileID: 100004, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
   m_RootGameObject: {fileID: 1104310758}
@@ -3644,7 +3648,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &2076532436
 Transform:
   m_ObjectHideFlags: 0
