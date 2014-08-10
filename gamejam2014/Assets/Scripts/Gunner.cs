@@ -46,7 +46,7 @@ public class Gunner : MonoBehaviour {
                 createBullet(new Vector2(0,0.25f));
                 createBullet(new Vector2(0,-0.25f));
 
-            }else if(upgradeLevel == 2){
+            }else{ //if(upgradeLevel == 2){
                 createBullet(new Vector2(0,0.5f));
                 createBullet(new Vector2(0,0));
                 createBullet(new Vector2(0,-0.5f));
