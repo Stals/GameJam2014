@@ -37,4 +37,13 @@ public class CameraShake : MonoBehaviour
         shake_intensity = inten;
         shake_decay = decay;
     }
+
+    public void stopShake()
+    {
+        transform.position = originPosition;
+        transform.rotation = originRotation;
+
+        shake_intensity = 0;
+        shake_decay = 0;
+    }
 }

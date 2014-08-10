@@ -1080,6 +1080,7 @@ MonoBehaviour:
   switchLabel: {fileID: 961933017}
   engineBar: {fileID: 1710966196}
   walkingPlayer: {fileID: 463482457}
+  cameraShake: {fileID: 1290066784}
 --- !u!4 &559145331
 Transform:
   m_ObjectHideFlags: 0

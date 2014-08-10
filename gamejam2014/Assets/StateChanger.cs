@@ -16,6 +16,8 @@ public class StateChanger : MonoBehaviour {
 
     public GameObject walkingPlayer;
 
+    public CameraShake cameraShake;
+
 	// Use this for initialization
 	void Start () {
 	
@@ -43,6 +45,8 @@ public class StateChanger : MonoBehaviour {
 
     public void changeToWalk()
     {
+        cameraShake.stopShake();
+
         Game.Instance.setCurrentState( GameState.Walk );
         
         mainCam.orthographicSize = closeSize;
@@ -58,6 +62,8 @@ public class StateChanger : MonoBehaviour {
 
     public void changeToFly()
     {
+        cameraShake.stopShake();
+
         Game.Instance.setCurrentState( GameState.Fly );
         
         mainCam.orthographicSize = farSize;
