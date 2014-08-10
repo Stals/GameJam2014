@@ -1375,6 +1375,14 @@ Prefab:
       propertyPath: m_audioClip
       value: 
       objectReference: {fileID: 8300000, guid: b467f3699f144415fbd262066bbb9bbd, type: 3}
+    - target: {fileID: 8200002, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_Volume
+      value: .400000006
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200004, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_Volume
+      value: .400000006
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
   m_RootGameObject: {fileID: 1104310758}
@@ -1611,7 +1619,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 2f84ac9a4f8594a8e9b831efc16bcb68, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .400000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -1866,7 +1874,7 @@ AudioSource:
   serializedVersion: 3
   m_audioClip: {fileID: 8300000, guid: 2f84ac9a4f8594a8e9b831efc16bcb68, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: .400000006
   m_Pitch: 1
   Loop: 1
   Mute: 0
