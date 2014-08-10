@@ -18,15 +18,30 @@ public class StateChanger : MonoBehaviour {
 
     public CameraShake cameraShake;
 
+    private float targetCamSize;
+    private Vector3 targetCamPosition;
+
+    private float transitionTimeScale = 5f;
+
 	// Use this for initialization
 	void Start () {
-	
+        targetCamSize = mainCam.orthographicSize;
+        targetCamPosition = mainCam.transform.position;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        //Mathf.Lerp(hpSlider.value, targetValue, Time.deltaTime * 5f);
+
+        //targetCamSize
+
+        mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, targetCamSize, Time.deltaTime * transitionTimeScale);
 	
-	}
+        float x = Mathf.Lerp(mainCam.transform.position.x, targetCamPosition.x, Time.deltaTime * transitionTimeScale);
+        float y = Mathf.Lerp(mainCam.transform.position.y, targetCamPosition.y, Time.deltaTime * transitionTimeScale);
+    
+        mainCam.transform.position = new Vector3(x, y, -10);
+    }
 
     void FixedUpdate(){
         updateLabel();
@@ -49,14 +64,15 @@ public class StateChanger : MonoBehaviour {
 
         Game.Instance.setCurrentState( GameState.Walk );
         
-        mainCam.orthographicSize = closeSize;
+        targetCamSize = closeSize;
         
         Vector3 playerPosition = Game.Instance.getPlayerShip().transform.position;
-        mainCam.transform.position = new Vector3(playerPosition.x, playerPosition.y, -10);
+        targetCamPosition = new Vector3(playerPosition.x, playerPosition.y, -10);
         
         shipOverlay.SetActive(false);
         engineBar.gameObject.SetActive(true);
 
+        // reset walking player position
         walkingPlayer.transform.localPosition = new Vector3(-5.5f, 0f, 0f);
     }
 
@@ -70,8 +86,11 @@ public class StateChanger : MonoBehaviour {
         mainCam.transform.position = new Vector3(0, 0, -10);
         shipOverlay.SetActive(true);
         engineBar.gameObject.SetActive(false);
-    }
 
+        targetCamSize = mainCam.orthographicSize;
+        targetCamPosition = mainCam.transform.position;
+    }
+    
     void updateLabel()
     {
         if (Game.Instance.getCurrentState() == GameState.Walk)
