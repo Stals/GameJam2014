@@ -58,9 +58,6 @@ public class StateChanger : MonoBehaviour {
                 changeToWalk();
             }
 
-            else if(Game.Instance.getCurrentState() == GameState.Walk){
-                changeToFly();
-            }
         }
     }
 

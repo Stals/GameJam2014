@@ -14,10 +14,16 @@ public class EnemySpawner : MonoBehaviour {
 
     public int currentID;
 
+    float screenWidthInPoints;
+    float height;
+
 	// Use this for initialization
 	void Start () {
         timeElapsed = 0;
         currentID = 0;
+
+        height = 2.0f * Camera.main.orthographicSize;
+        screenWidthInPoints = height * Camera.main.aspect;
 	}
 	
 	// Update is called once per frame
@@ -66,13 +72,47 @@ public class EnemySpawner : MonoBehaviour {
         //int patternID = Random.Range(0, patternPrefabs.Count);
         //GameObject prefab = patternPrefabs[patternID];
 
-        Vector3 spawnPosition = getPatternStartPosition();
+        Vector3 spawnPosition = getPatternStartPosition(prefab);
 
         Instantiate(prefab, new Vector3(spawnPosition.x, spawnPosition.y, 0), prefab.transform.rotation);
     }
 
-    Vector3 getPatternStartPosition()
+    Vector3 getPatternStartPosition(GameObject pattern)
     {
-        return new Vector3(12, Random.Range(-2.5f, 2.5f), 0);
+        //Debug.Log("World Height " + height.ToString());
+        //Debug.Log("pattern height " + getHeight(pattern));
+
+        float freeSpace = height - getHeight(pattern) - 0.5f;
+
+        return new Vector3(12, Random.Range(-freeSpace/2, freeSpace/2), 0);
+    }
+
+    float getHeight(GameObject go)
+    {
+        // First find a center for your bounds.
+        Vector3 center = Vector3.zero;
+
+        foreach (Transform t in go.transform)
+        {
+            foreach (Transform child in t)
+            {
+                Renderer renderer = child.gameObject.renderer;
+                center += child.gameObject.renderer.bounds.center;   
+            }
+        }
+        center /= go.transform.childCount; //center is average center of children
+        
+        //Now you have a center, calculate the bounds by creating a zero sized 'Bounds', 
+        Bounds bounds = new Bounds(center,Vector3.zero); 
+
+        foreach (Transform t in go.transform)
+        {
+            foreach (Transform child in t)
+            {
+                bounds.Encapsulate(child.gameObject.renderer.bounds);   
+            }
+        }
+        
+        return bounds.size.y;
     }
 }
