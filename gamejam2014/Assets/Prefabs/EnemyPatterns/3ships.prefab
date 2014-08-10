@@ -216,7 +216,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
-  m_Mass: 1
+  m_Mass: 99999
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -231,7 +231,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100008}
-  m_Mass: 1
+  m_Mass: 99999
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -246,7 +246,7 @@ Rigidbody2D:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100012}
-  m_Mass: 1
+  m_Mass: 99999
   m_LinearDrag: 0
   m_AngularDrag: .0500000007
   m_GravityScale: 0
@@ -321,6 +321,8 @@ MonoBehaviour:
   shotDelay: 1
   shotTimeElapsed: 0
   bulletPrefab: {fileID: 100000, guid: 262e1a94482a447fb8260ee72a50fd00, type: 2}
+  upgradeLevel: 0
+  maxUpgrades: 3
 --- !u!114 &11400004
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -337,6 +339,8 @@ MonoBehaviour:
   shotDelay: 1
   shotTimeElapsed: 0
   bulletPrefab: {fileID: 100000, guid: 262e1a94482a447fb8260ee72a50fd00, type: 2}
+  upgradeLevel: 0
+  maxUpgrades: 3
 --- !u!114 &11400006
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -370,6 +374,8 @@ MonoBehaviour:
   shotDelay: 1
   shotTimeElapsed: 0
   bulletPrefab: {fileID: 100000, guid: 262e1a94482a447fb8260ee72a50fd00, type: 2}
+  upgradeLevel: 0
+  maxUpgrades: 3
 --- !u!114 &11400010
 MonoBehaviour:
   m_ObjectHideFlags: 1
