@@ -26,11 +26,11 @@ public class UpgradeObject : ShipObject {
         }
         else if (gunner.upgradeLevel == 2)
         {
-            gunner.shotDelay = 0.2f;
+            gunner.shotDelay = 0.25f;
         }
         else if (gunner.upgradeLevel == 3)
         {
-            gunner.shotDelay = 0.15f;
+            gunner.shotDelay = 0.2f;
         }
 
         if (gunner.upgradeLevel > (gunner.maxUpgrades - 1))
