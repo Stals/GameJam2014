@@ -630,6 +630,7 @@ MonoBehaviour:
   gunner: {fileID: 0}
   cameraShake: {fileID: 0}
   victoryGO: {fileID: 0}
+  explisionPrefab: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1

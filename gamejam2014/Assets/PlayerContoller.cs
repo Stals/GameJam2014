@@ -22,6 +22,8 @@ public class PlayerContoller : MonoBehaviour {
 
     public GameObject victoryGO;
 
+    public GameObject explisionPrefab;
+
 	// Use this for initialization
 	void Start () {
         currentPosition = this.transform.position;

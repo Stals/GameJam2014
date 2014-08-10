@@ -79,6 +79,9 @@ public class EnemyController : MonoBehaviour {
         if (coll.gameObject.tag != this.gameObject.tag)
         {
             Game.Instance.getPlayer().addMoney(10);
+
+
+            createExplosion();
             Destroy (gameObject);
 
             if(coll.gameObject.layer != 8){ // player
@@ -88,6 +91,12 @@ public class EnemyController : MonoBehaviour {
                 }
             }
         }
+    }
+
+    void createExplosion(){
+        GameObject expPrefab = Game.Instance.getPlayerShip().GetComponent<PlayerContoller>().explisionPrefab;
+   
+        GameObject expl = (GameObject)(Instantiate(expPrefab, new Vector3(transform.position.x, transform.position.y, 0), transform.rotation));
     }
 
     //return true if moved
