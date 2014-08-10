@@ -84,7 +84,7 @@ public class EnemyController : MonoBehaviour {
             if(coll.gameObject.layer != 8){ // player
                 Destroy(coll.gameObject);
                 if(cameraShake){
-                    cameraShake.Shake(.017f, .005f);
+                    cameraShake.Shake(.08f, .005f);
                 }
             }
         }

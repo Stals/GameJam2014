@@ -88,7 +88,7 @@ public class PlayerContoller : MonoBehaviour {
         {
             Game.Instance.getPlayer().removeHP(5);
             Destroy(coll.gameObject);
-            cameraShake.Shake(.05f, .005f);
+            cameraShake.Shake(.15f, .005f);
 
         }
     }
