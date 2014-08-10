@@ -47,18 +47,22 @@ public class StateChanger : MonoBehaviour {
         {
             cameraShake.stopShake();
         }*/
+
+        if (Input.GetKeyDown(changeButton))
+        {
+            //Debug.Log("Tab pressed");
+            if(Game.Instance.getCurrentState() == GameState.Fly){
+                //Debug.Log("Change view");
+                changeToWalk();
+            }
+            
+        }
     }
 
     void FixedUpdate(){
         updateLabel();
 
-        if (Input.GetKeyDown(changeButton))
-        {
-            if(Game.Instance.getCurrentState() == GameState.Fly){
-                changeToWalk();
-            }
 
-        }
     }
 
     public void changeToWalk()
