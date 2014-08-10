@@ -12,6 +12,8 @@ public class GameSetup : MonoBehaviour {
     public BoxCollider2D leftWall;
     public BoxCollider2D rightWall;
 
+    public KeyCode resetPlayerPosition;
+
 	// Use this for initialization
 	void Start () {
         Game.Instance.init(playerShip);
@@ -21,7 +23,10 @@ public class GameSetup : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
+        if (Input.GetKeyDown(resetPlayerPosition))
+        {
+            playerShip.transform.position = new Vector3(-5, 0, 0);
+        }
 	}
 
     void setupWalls()

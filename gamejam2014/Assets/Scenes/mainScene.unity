@@ -608,6 +608,7 @@ MonoBehaviour:
   bottomWall: {fileID: 687168178}
   leftWall: {fileID: 455940266}
   rightWall: {fileID: 675712272}
+  resetPlayerPosition: 112
 --- !u!4 &346107043
 Transform:
   m_ObjectHideFlags: 0
