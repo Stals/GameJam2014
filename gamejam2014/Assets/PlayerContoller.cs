@@ -23,6 +23,7 @@ public class PlayerContoller : MonoBehaviour {
     public GameObject victoryGO;
 
     public GameObject explisionPrefab;
+    public AudioSource explosionSound;
 
 	// Use this for initialization
 	void Start () {

@@ -90,6 +90,9 @@ public class EnemyController : MonoBehaviour {
                     cameraShake.Shake(.08f, .005f);
                 }
             }
+            AudioSource audio = Game.Instance.getPlayerShip().GetComponent<PlayerContoller>().explosionSound;
+            audio.pitch = Random.Range(1.0f, 1.3f);
+            audio.Play();
         }
     }
 
