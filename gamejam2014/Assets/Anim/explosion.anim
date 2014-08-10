@@ -17,14 +17,18 @@ AnimationClip:
   m_FloatCurves: []
   m_PPtrCurves:
   - curve:
-    - time: .550000012
-      value: {fileID: 21300000, guid: a68c6cc7ecc514e4ba2580479de90d7b, type: 3}
-    - time: .75
-      value: {fileID: 21300000, guid: 1df9eaea4feeb4aac90f72fd3456a719, type: 3}
-    - time: 1
-      value: {fileID: 21300000, guid: 1df9eaea4feeb4aac90f72fd3456a719, type: 3}
-    - time: 1.35000002
-      value: {fileID: 21300000, guid: a68c6cc7ecc514e4ba2580479de90d7b, type: 3}
+    - time: 0
+      value: {fileID: 21300000, guid: 89e4661a0ce214ca0ba7b0c2f66ba25f, type: 3}
+    - time: .0500000007
+      value: {fileID: 21300000, guid: 137f37b45d62249bfa18080b7fee3416, type: 3}
+    - time: .100000001
+      value: {fileID: 21300000, guid: 3c789fdfd84084236b7371d971045251, type: 3}
+    - time: .150000006
+      value: {fileID: 21300000, guid: 76e23cb5e2d72454fad31f11ba7fca5a, type: 3}
+    - time: .200000003
+      value: {fileID: 21300000, guid: 89f5f0a58a8a94a32824c42ff03b3399, type: 3}
+    - time: .25
+      value: {fileID: 21300000, guid: 133083fc7aa9d4e2ba367ec543ae703e, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -43,14 +47,16 @@ AnimationClip:
       customType: 23
       isPPtrCurve: 1
     pptrCurveMapping:
-    - {fileID: 21300000, guid: a68c6cc7ecc514e4ba2580479de90d7b, type: 3}
-    - {fileID: 21300000, guid: 1df9eaea4feeb4aac90f72fd3456a719, type: 3}
-    - {fileID: 21300000, guid: 1df9eaea4feeb4aac90f72fd3456a719, type: 3}
-    - {fileID: 21300000, guid: a68c6cc7ecc514e4ba2580479de90d7b, type: 3}
+    - {fileID: 21300000, guid: 89e4661a0ce214ca0ba7b0c2f66ba25f, type: 3}
+    - {fileID: 21300000, guid: 137f37b45d62249bfa18080b7fee3416, type: 3}
+    - {fileID: 21300000, guid: 3c789fdfd84084236b7371d971045251, type: 3}
+    - {fileID: 21300000, guid: 76e23cb5e2d72454fad31f11ba7fca5a, type: 3}
+    - {fileID: 21300000, guid: 89f5f0a58a8a94a32824c42ff03b3399, type: 3}
+    - {fileID: 21300000, guid: 133083fc7aa9d4e2ba367ec543ae703e, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_StartTime: 0
-    m_StopTime: 1.39999998
+    m_StopTime: .300000012
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
