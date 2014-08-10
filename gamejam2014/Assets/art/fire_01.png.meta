@@ -1,6 +1,8 @@
 fileFormatVersion: 2
 guid: 92158c48f22d84d08a6833e65d068d4c
 TextureImporter:
+  fileIDToRecycleName:
+    21300000: fire_01
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -24,9 +26,9 @@ TextureImporter:
   maxTextureSize: 1024
   textureSettings:
     filterMode: -1
-    aniso: -1
+    aniso: 1
     mipBias: -1
-    wrapMode: -1
+    wrapMode: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
