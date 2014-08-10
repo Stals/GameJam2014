@@ -19,11 +19,13 @@ public class CameraShake : MonoBehaviour
     void Update (){
         if (shake_intensity > 0){
             transform.position = originPosition + Random.insideUnitSphere * shake_intensity;
-            transform.rotation = new Quaternion(
+            //transform.position = new Vector3(transform.position.x, transform.position.y, originPosition.z);
+
+            /*transform.rotation = new Quaternion(
                 originRotation.x + Random.Range (-shake_intensity,shake_intensity) * .2f,
                 originRotation.y + Random.Range (-shake_intensity,shake_intensity) * .2f,
-                originRotation.z + Random.Range (-shake_intensity,shake_intensity) * .2f,
-                originRotation.w + Random.Range (-shake_intensity,shake_intensity) * .2f);
+                originRotation.z ,
+                originRotation.w );*/
             shake_intensity -= shake_decay;
         }
     }
