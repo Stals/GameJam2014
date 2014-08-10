@@ -82,12 +82,12 @@ public class EnemySpawner : MonoBehaviour {
         //Debug.Log("World Height " + height.ToString());
         //Debug.Log("pattern height " + getHeight(pattern));
 
-        float freeSpace = height - getHeight(pattern) - 0.5f;
+        float freeSpaceY = height - getBounds(pattern).y - 0.5f;
 
-        return new Vector3(12, Random.Range(-freeSpace/2, freeSpace/2), 0);
+        return new Vector3(12, Random.Range(-freeSpaceY/2, freeSpaceY/2), 0);
     }
 
-    float getHeight(GameObject go)
+    Vector3 getBounds(GameObject go)
     {
         // First find a center for your bounds.
         Vector3 center = Vector3.zero;
@@ -113,6 +113,6 @@ public class EnemySpawner : MonoBehaviour {
             }
         }
         
-        return bounds.size.y;
+        return bounds.size;
     }
 }
