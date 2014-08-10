@@ -98,4 +98,6 @@ public class PlayerContoller : MonoBehaviour {
         victoryGO.SetActive(true);
     }
 
+
+
 }
