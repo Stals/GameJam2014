@@ -19,5 +19,12 @@ public class UpgradeObject : ShipObject {
     {
         Gunner gunner = Game.Instance.getPlayerShip().GetComponent<Gunner>();
         gunner.upgradeLevel += 1;
+        if (gunner.upgradeLevel > (gunner.maxUpgrades - 1))
+        {
+            gunner.upgradeLevel = gunner.maxUpgrades - 1;
+        } else
+        {
+            Game.Instance.getPlayer().removeMoney(gunner.upgradeLevel * 50);
+        }
     }
 }

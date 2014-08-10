@@ -83,6 +83,9 @@ public class Player {
 
     public void removeMoney(int m)
     {
-        money += m;
+        money -= m;
+        if(money < 0){
+            money = 0;
+        }
     }
 }
