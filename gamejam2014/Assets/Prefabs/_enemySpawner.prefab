@@ -47,22 +47,22 @@ MonoBehaviour:
   - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
-  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
-  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
+  - {fileID: 100036, guid: a3e991c3e72a3754cb30d534cce1354d, type: 2}
+  - {fileID: 100036, guid: f4aa084757bf33d4f824c6a7595c07b6, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100036, guid: a3e991c3e72a3754cb30d534cce1354d, type: 2}
   - {fileID: 100036, guid: a3e991c3e72a3754cb30d534cce1354d, type: 2}
   - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
-  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100036, guid: f4aa084757bf33d4f824c6a7595c07b6, type: 2}
   - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100008, guid: e003977bacdb56b45baf856d2496c598, type: 2}
   - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
   - {fileID: 100020, guid: ad7df0e1b6aa804448ab3cd0871d321f, type: 2}
-  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
-  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
-  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
-  - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
+  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
+  - {fileID: 100036, guid: a3e991c3e72a3754cb30d534cce1354d, type: 2}
+  - {fileID: 100020, guid: 68358df56de57174b81c336cd5df5d7d, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   - {fileID: 100000, guid: ce7b9511370054c78bc166d9f3034f87, type: 2}
   delays:
@@ -71,26 +71,26 @@ MonoBehaviour:
   - 2
   - 2
   - 3
+  - 10
+  - 4
+  - 4
+  - 7
+  - 7
+  - 7
+  - 7
+  - 3
+  - 4
   - 15
+  - 4
+  - 4
+  - 4
+  - 4
+  - 4
+  - 15
+  - 4
+  - 4
   - 2
   - 2
-  - 2
-  - 3
-  - 20
-  - 3
-  - 3
-  - 2
-  - 3
-  - 3
-  - 3
-  - 20
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
-  - 5
   waveDelay: 2.5
   timeElapsed: 0
   currentID: 0
