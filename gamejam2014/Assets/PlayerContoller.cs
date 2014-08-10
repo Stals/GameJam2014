@@ -89,7 +89,7 @@ public class PlayerContoller : MonoBehaviour {
 
         if (coll.gameObject.tag != this.gameObject.tag)
         {
-            Game.Instance.getPlayer().removeHP(5);
+            Game.Instance.getPlayer().removeHP(50);
             Destroy(coll.gameObject);
             cameraShake.Shake(.15f, .005f);
             GetComponent<AudioSource>().Play();

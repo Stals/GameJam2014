@@ -25,6 +25,6 @@ public class RepairObject : ShipObject {
     
     public override void performAction()
     {
-        Game.Instance.getPlayer().addHP(1);
+        Game.Instance.getPlayer().addHP(7);
     }
 }

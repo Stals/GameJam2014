@@ -33,7 +33,7 @@ public class Game  {
     
     public void init(GameObject _playerShip)
     {
-        player = new Player(100, 1000);
+        player = new Player(1000, 1000);
         playerShip = _playerShip;
 
         state = GameState.Fly;
