@@ -21,7 +21,7 @@ public class StateChanger : MonoBehaviour {
     private float targetCamSize;
     private Vector3 targetCamPosition;
 
-    private float transitionTimeScale = 5f;
+    private float transitionTimeScale = 9f;
 
 	// Use this for initialization
 	void Start () {
@@ -41,6 +41,12 @@ public class StateChanger : MonoBehaviour {
         float y = Mathf.Lerp(mainCam.transform.position.y, targetCamPosition.y, Time.deltaTime * transitionTimeScale);
     
         mainCam.transform.position = new Vector3(x, y, -10);
+
+        /*if ((mainCam.transform.position.x != targetCamPosition.x) || 
+            (mainCam.transform.position.x != targetCamPosition.x))
+        {
+            cameraShake.stopShake();
+        }*/
     }
 
     void FixedUpdate(){
