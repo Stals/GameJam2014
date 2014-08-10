@@ -20,6 +20,8 @@ public class PlayerContoller : MonoBehaviour {
 
     Vector3 currentPosition;
 
+    public GameObject victoryGO;
+
 	// Use this for initialization
 	void Start () {
         currentPosition = this.transform.position;
@@ -89,6 +91,11 @@ public class PlayerContoller : MonoBehaviour {
             cameraShake.Shake(.05f, .005f);
 
         }
+    }
+
+    public void showWin()
+    {
+        victoryGO.SetActive(true);
     }
 
 }

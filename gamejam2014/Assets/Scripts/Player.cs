@@ -35,6 +35,7 @@ public class Player {
         if (currentEngine >= maxEngine)
         {
             currentEngine = maxEngine;
+            winGame();
         }
     }
 
@@ -87,5 +88,13 @@ public class Player {
         if(money < 0){
             money = 0;
         }
+    }
+
+    public void winGame()
+    {
+        // TODO show dialog
+        Game.Instance.getPlayerShip().GetComponent<PlayerContoller>().showWin();
+
+        Time.timeScale = 0;
     }
 }
