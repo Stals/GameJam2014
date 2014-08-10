@@ -1417,6 +1417,22 @@ Prefab:
       propertyPath: victoryGO
       value: 
       objectReference: {fileID: 218977156}
+    - target: {fileID: 6100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_Center.x
+      value: -.360000014
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_Size.y
+      value: 1.04999995
+      objectReference: {fileID: 0}
+    - target: {fileID: 6100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
+      propertyPath: m_Size.x
+      value: 2.55999994
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 357a064941b744621992a983ef1ecb88, type: 2}
   m_RootGameObject: {fileID: 1104310758}
@@ -2157,8 +2173,8 @@ BoxCollider2D:
   m_Enabled: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Size: {x: 2.44000006, y: 1.04999995}
-  m_Center: {x: 0, y: -.219999999}
+  m_Size: {x: 2.55999994, y: 1.04999995}
+  m_Center: {x: -.360000014, y: 0}
 --- !u!50 &1104310762
 Rigidbody2D:
   m_ObjectHideFlags: 0
