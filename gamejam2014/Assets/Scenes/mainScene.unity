@@ -280,7 +280,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 175631326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -377.441162, y: -245, z: 0}
+  m_LocalPosition: {x: -537.263184, y: -245, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1528119843}
@@ -372,7 +372,7 @@ Transform:
   m_PrefabInternal: {fileID: 1716826807}
   m_GameObject: {fileID: 207277360}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 431.441162, y: 329, z: 0}
+  m_LocalPosition: {x: 591.263184, y: 329, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1528119843}
@@ -943,7 +943,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: 'press
+  mText: 'hold
 
     SPACE
 
@@ -1717,7 +1717,7 @@ Transform:
   m_PrefabInternal: {fileID: 1767528128}
   m_GameObject: {fileID: 777092732}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -311.441162, y: 330, z: 0}
+  m_LocalPosition: {x: -471.263184, y: 330, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1609759415}
@@ -2032,7 +2032,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 961933015}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -395.441162, y: 288, z: 0}
+  m_LocalPosition: {x: -555.263184, y: 288, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1528119843}
@@ -2269,7 +2269,7 @@ MonoBehaviour:
   keepCrispWhenShrunk: 1
   mTrueTypeFont: {fileID: 0}
   mFont: {fileID: 11400000, guid: 29056518aafb01b49a5b08faf8e30cff, type: 2}
-  mText: 'press SPACE
+  mText: 'hold SPACE
 
     to repair HULL'
   mFontSize: 30
@@ -2622,7 +2622,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1191000624}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -377.441162, y: -290, z: 0}
+  m_LocalPosition: {x: -537.263184, y: -290, z: 0}
   m_LocalScale: {x: 1.00007999, y: 1.00007999, z: 1.00007999}
   m_Children: []
   m_Father: {fileID: 1528119843}
@@ -3468,7 +3468,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 73a147c57d18243a8a4b1529e74c326e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 431.441162
+      value: 591.263184
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 73a147c57d18243a8a4b1529e74c326e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3532,7 +3532,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400006, guid: 6fe79c3cbc3f94b409dc79283fe3d06d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -311.441162
+      value: -471.263184
       objectReference: {fileID: 0}
     - target: {fileID: 400006, guid: 6fe79c3cbc3f94b409dc79283fe3d06d, type: 2}
       propertyPath: m_LocalPosition.y
@@ -3836,6 +3836,14 @@ Prefab:
     - target: {fileID: 11400000, guid: 3ef025ef0977c4fd2bb88b9c93bf5245, type: 2}
       propertyPath: topAnchor.relative
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 11400000, guid: 3ef025ef0977c4fd2bb88b9c93bf5245, type: 2}
+      propertyPath: mText
+      value: 'hold
+
+        SPACE
+
+        to repair'
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ef025ef0977c4fd2bb88b9c93bf5245, type: 2}
