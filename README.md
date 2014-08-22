@@ -1,7 +1,9 @@
 GameJam2014
 ===========
+Game:
 http://stals.itch.io/broken-engine
-
+Project page:
+http://gamesjam.org/947/
 
 (This game was made in 30 hours during the #GamesJam2014)
 
